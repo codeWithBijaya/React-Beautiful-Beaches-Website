@@ -1,0 +1,95 @@
+.navbar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 1rem;
+  z-index: 2;
+  align-items: center;
+  position: absolute;
+  color: white;
+}
+
+.navbar-bg {
+  background-color: whitesmoke;
+}
+.icon {
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+
+.nav-menu {
+  display: flex;
+}
+
+li {
+  padding: 0 1rem;
+}
+.hasburger {
+  display: none;
+}
+.mobile-menu {
+  display: none;
+}
+@media screen and (max-width: 940px) {
+  .mobile-menu {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    top: -100vh;
+    left: 0;
+    position: absolute;
+    background-color: whitesmoke;
+    justify-content: space-between;
+    transition: 0.3s;
+    color: black;
+  }
+  .active {
+    top: 80px;
+  }
+  .dark {
+    color: black;
+  }
+  .mobile-nav {
+    margin: 1rem 0;
+  }
+
+  .social-icons {
+    justify-content: space-around;
+    display: flex;
+    margin: 2rem 0;
+  }
+
+  .social-icons .icon:hover {
+    transform: scale(1.5);
+    transition: 0.3s;
+  }
+
+  .mobile-menu-bottom {
+    padding: 1rem 0;
+    width: 100%;
+    text-align: center;
+  }
+  .mobile-menu li {
+    padding: 1.2rem 1rem;
+    border-bottom: 1px solid #ccc;
+    margin: 0 1rem;
+  }
+
+  .mobile-menu button {
+    margin: 1rem;
+    width: 90%;
+  }
+  .nav-menu {
+    display: none;
+  }
+
+  .nav-icons {
+    display: none;
+  }
+
+  .hasburger {
+    display: block;
+  }
+}
